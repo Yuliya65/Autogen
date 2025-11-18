@@ -14,7 +14,7 @@ jobs:
   format:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@93cb6efe18208431cddfb8368fd83d5badbf9bfd # v5
       - uses: astral-sh/setup-uv@v5
         with:
           enable-cache: true
@@ -32,7 +32,7 @@ jobs:
   lint:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@93cb6efe18208431cddfb8368fd83d5badbf9bfd # v5
       - uses: astral-sh/setup-uv@v5
         with:
           enable-cache: true
@@ -60,7 +60,7 @@ jobs:
             "./packages/magentic-one-cli",
           ]
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@93cb6efe18208431cddfb8368fd83d5badbf9bfd # v5
       - uses: astral-sh/setup-uv@v5
         with:
           enable-cache: true
@@ -78,7 +78,7 @@ jobs:
   docs-mypy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@93cb6efe18208431cddfb8368fd83d5badbf9bfd # v5
       - uses: astral-sh/setup-uv@v5
         with:
           enable-cache: true
@@ -106,7 +106,7 @@ jobs:
             "./packages/magentic-one-cli",
           ]
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@93cb6efe18208431cddfb8368fd83d5badbf9bfd # v5
       - uses: astral-sh/setup-uv@v5
         with:
           enable-cache: true
@@ -132,7 +132,7 @@ jobs:
             "./packages/autogen-agentchat",
           ]
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@93cb6efe18208431cddfb8368fd83d5badbf9bfd # v5
       - uses: astral-sh/setup-uv@v5
         with:
           enable-cache: true
@@ -165,7 +165,7 @@ jobs:
   test-grpc:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@93cb6efe18208431cddfb8368fd83d5badbf9bfd # v5
       - uses: astral-sh/setup-uv@v5
         with:
           enable-cache: true
@@ -196,7 +196,7 @@ jobs:
   test-autogen-ext-pwsh:
     runs-on: windows-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@93cb6efe18208431cddfb8368fd83d5badbf9bfd # v5
 
       - uses: astral-sh/setup-uv@v5
         with:
@@ -243,11 +243,11 @@ jobs:
             "autogen-ext-grpc",
           ]
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@93cb6efe18208431cddfb8368fd83d5badbf9bfd # v5
       - name: Set up environment
         run: |
           echo "PKG_NAME=$(basename '${{ matrix.package }}')" >> $GITHUB_ENV
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@93cb6efe18208431cddfb8368fd83d5badbf9bfd # v5
       - uses: actions/download-artifact@v4
         with:
           name: coverage-${{ env.PKG_NAME }}
@@ -263,7 +263,7 @@ jobs:
   docs:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@93cb6efe18208431cddfb8368fd83d5badbf9bfd # v5
       - uses: astral-sh/setup-uv@v5
         with:
           enable-cache: true
@@ -281,7 +281,7 @@ jobs:
   docs-example-check:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@93cb6efe18208431cddfb8368fd83d5badbf9bfd # v5
       - uses: astral-sh/setup-uv@v5
         with:
           enable-cache: true
@@ -299,7 +299,7 @@ jobs:
   samples-code-check:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@93cb6efe18208431cddfb8368fd83d5badbf9bfd # v5
       - uses: astral-sh/setup-uv@v5
         with:
           enable-cache: true
@@ -317,7 +317,7 @@ jobs:
   markdown-code-lint:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@93cb6efe18208431cddfb8368fd83d5badbf9bfd # v5
       - uses: astral-sh/setup-uv@v3
         with:
           enable-cache: true
@@ -335,7 +335,7 @@ jobs:
   check-proto-changes-python:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@93cb6efe18208431cddfb8368fd83d5badbf9bfd # v5
       - uses: astral-sh/setup-uv@v5
         with:
           enable-cache: true
