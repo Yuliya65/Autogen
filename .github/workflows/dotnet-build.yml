@@ -77,11 +77,11 @@ jobs:
       run: |
         source ${{ github.workspace }}/python/.venv/bin/activate
     - name: Setup .NET 8.0
-      uses: actions/setup-dotnet@v4
+      uses: actions/setup-dotnet@d4c94342e560b34958eacfc5d055d21461ed1c5d # v5
       with:
         dotnet-version: '8.0.x'
     - name: Setup .NET 9.0
-      uses: actions/setup-dotnet@v4
+      uses: actions/setup-dotnet@d4c94342e560b34958eacfc5d055d21461ed1c5d # v5
       with:
         dotnet-version: '9.0.x'
     - name: Restore dependencies
@@ -162,11 +162,11 @@ jobs:
       run: |
         source ${{ github.workspace }}/python/.venv/bin/activate
     - name: Setup .NET 8.0
-      uses: actions/setup-dotnet@v4
+      uses: actions/setup-dotnet@d4c94342e560b34958eacfc5d055d21461ed1c5d # v5
       with:
         dotnet-version: '8.0.x'
     - name: Setup .NET 9.0
-      uses: actions/setup-dotnet@v4
+      uses: actions/setup-dotnet@d4c94342e560b34958eacfc5d055d21461ed1c5d # v5
       with:
         dotnet-version: '9.0.x'
     - name: Install Temp Global.JSON
@@ -206,11 +206,11 @@ jobs:
         fetch-depth: 0 # fetching all
 
     - name: Setup dotnet
-      uses: actions/setup-dotnet@v4
+      uses: actions/setup-dotnet@d4c94342e560b34958eacfc5d055d21461ed1c5d # v5
       with:
         dotnet-version: '8.0.x'
     - name: Setup .NET 9.0
-      uses: actions/setup-dotnet@v4
+      uses: actions/setup-dotnet@d4c94342e560b34958eacfc5d055d21461ed1c5d # v5
       with:
         dotnet-version: '9.0.x'
 
@@ -250,12 +250,12 @@ jobs:
         python-version: "3.11"
 
     - name: Setup .NET 8.0
-      uses: actions/setup-dotnet@v4
+      uses: actions/setup-dotnet@d4c94342e560b34958eacfc5d055d21461ed1c5d # v5
       with:
         dotnet-version: '8.0.x'
         global-json-file: dotnet/global.json
     - name: Setup .NET 9.0
-      uses: actions/setup-dotnet@v4
+      uses: actions/setup-dotnet@d4c94342e560b34958eacfc5d055d21461ed1c5d # v5
       with:
         dotnet-version: '9.0.x'
     - name: Install dev certs
@@ -304,7 +304,7 @@ jobs:
     needs: openai-test
     steps:
     - name: Setup .NET
-      uses: actions/setup-dotnet@v4
+      uses: actions/setup-dotnet@d4c94342e560b34958eacfc5d055d21461ed1c5d # v5
       with:
         dotnet-version: '6.0.x'
         source-url: https://devdiv.pkgs.visualstudio.com/DevDiv/_packaging/AutoGen/nuget/v3/index.json
