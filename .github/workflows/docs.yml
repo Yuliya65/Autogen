@@ -305,7 +305,7 @@ jobs:
         with:
           lfs: true
           ref: "0.2"
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@2028fbc5c25fe9cf00d9f06a71cc4710d4507903 # v6
         with:
           node-version: 18.x
       - name: setup python
