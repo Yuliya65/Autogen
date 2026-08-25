@@ -14,7 +14,7 @@ jobs:
 
     services:
       neo4j:
-        image: neo4j:5.26.6
+        image: neo4j:5.26.30@sha256:037cf5756f0135cbfd66b739b6df7c7c4bb100f9ce11602f6f9538e17e02c74d
         ports:
           - 7474:7474    # HTTP
           - 7687:7687    # BOLT
