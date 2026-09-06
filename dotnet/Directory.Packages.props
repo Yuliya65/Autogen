@@ -38,7 +38,7 @@
     <PackageVersion Include="Azure.ResourceManager.ContainerInstance" Version="1.2.1" />
     <PackageVersion Include="Azure.Storage.Files.Shares" Version="12.21.0" />
     <PackageVersion Include="CloudNative.CloudEvents.SystemTextJson" Version="2.7.1" />
-    <PackageVersion Include="coverlet.collector" Version="6.0.2" />
+    <PackageVersion Include="coverlet.collector" Version="6.0.4" />
     <PackageVersion Include="FluentAssertions" Version="6.12.2" />
     <PackageVersion Include="GitHubActionsTestLogger" Version="2.4.1">
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
@@ -84,7 +84,7 @@
     <PackageVersion Include="Microsoft.Extensions.Logging.Debug" Version="$(MicrosoftExtensionLogging)" />
     <PackageVersion Include="Microsoft.Extensions.Options.DataAnnotations" Version="$(MicrosoftExtensionOptions)" />
     <PackageVersion Include="Microsoft.Extensions.ServiceDiscovery" Version="9.0.0" />
-    <PackageVersion Include="Microsoft.NET.Test.Sdk" Version="17.12.0" />
+    <PackageVersion Include="Microsoft.NET.Test.Sdk" Version="17.14.1" />
     <PackageVersion Include="Microsoft.Orleans.Clustering.Cosmos" Version="$(MicrosoftOrleans)" />
     <PackageVersion Include="Microsoft.Orleans.CodeGenerator" Version="$(MicrosoftOrleans)">
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
