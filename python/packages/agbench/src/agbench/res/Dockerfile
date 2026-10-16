@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/devcontainers/python:3.11
+FROM mcr.microsoft.com/devcontainers/python:3.11@sha256:1eb48ffd772f0618d66844eff8cbfd9914785be25f6a936d0756a1ddfc866cc3
 MAINTAINER AutoGen
 
 # Install packages
